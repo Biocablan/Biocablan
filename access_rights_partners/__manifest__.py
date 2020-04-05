@@ -14,6 +14,7 @@
         "security/ir.model.access.csv",
     ],
     "depends": [
+        "crm",
     ],
     "application": True,
     "installable": True,
