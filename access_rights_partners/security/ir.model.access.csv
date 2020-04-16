@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+comercial_res_partner,comercial_res_partner,base.model_res_partner,access_rights_partners.group_comercial_res_partner,1,1,1,0
+director_comercial_res_partner,director_comercial_res_partner,base.model_res_partner,access_rights_partners.group_director_comercial_res_partner,1,1,1,0
+director_comercial_crm_lead,director_comercial_crm_lead,crm.model_crm_lead,access_rights_partners.group_director_comercial_res_partner,1,1,1,0
