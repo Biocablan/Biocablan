@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+      <record id="office365_cron_do_customer_mails" model="ir.cron">
+          <field name="name">Sync Pedidos Ediversa a Odoo</field>
+          <field name="model_id" ref="model_res_users"/>
+          <field name="state">code</field>
+          <field name="active">0</field>
+          <field name="code">model.sync_orders_ediversa_to_odoo()</field>
+          <field name='interval_number'>7</field>
+          <field name="user_id" ref="base.user_root"/>
+          <field name='interval_type'>minutes</field>
+          <field name="numbercall">-1</field>
+      </record>
+    </data>
+</odoo>

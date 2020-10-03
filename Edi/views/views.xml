@@ -1,0 +1,5 @@
+<odoo>
+  <data>
+    <menuitem id="main_edi" web_icon="Edi,static/description/icon.png" name="EDI Settings" />
+  </data>
+</odoo>
