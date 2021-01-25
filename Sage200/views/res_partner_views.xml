@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <record id="view_res_partner_s200_form" model="ir.ui.view">
+    <field name="name">view.res_partner.s200.form</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='category_id']" position="after">
+        <field name="is_tipo_potencial" />
+        <field name="traspasarSage200" invisible="1" />
+        <field name="x_codigoclientesage" invisible="1" />
+      </xpath>
+      <xpath expr="/form/*" position="before">
+        <header>
+          <button attrs="{'invisible': ['|','|',('is_company', '=', False), ('traspasarSage200', '!=', False), ('x_codigoclientesage', '!=', False)]}" name="%(sage200_traspasar_res_partner_action_form)d" type="action" string="Traspasar a Sage200" class="btn-primary"/>
+        </header>
+      </xpath>
+    </field>
+  </record>
+</odoo>
